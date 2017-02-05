@@ -145,4 +145,29 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="wp-func-nav" value="function register_my_menus() {&#10;  register_nav_menus(&#10;    array(&#10;      'header-menu' =&gt; __( 'Header Menu' ),&#10;      'extra-menu' =&gt; __( 'Extra Menu' )&#10;    )&#10;  );&#10;}&#10;add_action( 'init', 'register_my_menus' );" description="navigation" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="wp-nav" value="&lt;?php wp_nav_menu( array( 'theme_location' =&gt; 'header-menu' ) ); ?&gt;" description="navigation in page" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="wp-nav:bootstrap" value="&lt;?php&#10;            wp_nav_menu( array(&#10;                'menu'              =&gt; 'primary',&#10;                'theme_location'    =&gt; 'primary',&#10;                'depth'             =&gt; 2,&#10;                'container'         =&gt; 'div',&#10;                'container_class'   =&gt; 'collapse navbar-collapse',&#10;        'container_id'      =&gt; 'bs-example-navbar-collapse-1',&#10;                'menu_class'        =&gt; 'nav navbar-nav',&#10;                'fallback_cb'       =&gt; 'wp_bootstrap_navwalker::fallback',&#10;                'walker'            =&gt; new wp_bootstrap_navwalker())&#10;            );&#10;?&gt;" description="bootstrap navigation" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="wp-set-title" value="&lt;?php if (is_home()) { echo bloginfo('title').' - $END$';} else { echo the_title(). ' - $END$';} ?&gt;" description="set full title php" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="wp-persiandate" value="&lt;?php echo jdate ('l  j F  Y') ; ?&gt;" description="persian date for wp-farsi" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
 </templateSet>
