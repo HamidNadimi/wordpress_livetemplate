@@ -170,4 +170,69 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
+  <template name="wp-comment" value="&lt;?php&#10; $comments = get_comments(array('post_id' =&gt; get_the_ID() , 'status' =&gt; 'approve'));&#10; foreach($comments as $comment):&#10;?&gt;&#10;    $END$                                    &#10;&lt;?php endforeach; ?&gt;" description="comment for wordpress" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="wp-comment:id" value="&lt;?php echo $comment-&gt;comment_ID; ?&gt;" description="wp-comment:comment_ID" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="wp-comment:post_ID" value="&lt;?php echo $comment-&gt;comment_post_ID; ?&gt;" description="wp-comment:comment_post_ID" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="wp-comment:author" value="&lt;?php echo $comment-&gt;comment_author; ?&gt;" description="wp-comment:comment_author" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="wp-comment:author_email" value="&lt;?php echo $comment-&gt;comment_author_email; ?&gt;" description="wp-comment:comment_author_email" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="wp-comment:author_url" value="&lt;?php echo $comment-&gt;comment_author_url; ?&gt;" description="wp-comment:comment_author_url" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="wp-comment:author_IP" value="&lt;?php echo $comment-&gt;comment_author_IP; ?&gt;" description="wp-comment:comment_author_IP" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="wp-comment:date" value="&lt;?php echo $comment-&gt;comment_date; ?&gt;" description="wp-comment:comment_date" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="wp-comment:date_gmt" value="&lt;?php echo $comment-&gt;comment_date_gmt; ?&gt;" description="wp-comment:comment_date_gmt" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="wp-comment:content" value="&lt;?php echo $comment-&gt;comment_content; ?&gt;" description="wp-comment:comment_content" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="wp-comment:karma" value="&lt;?php echo $comment-&gt;comment_karma; ?&gt;" description="wp-comment:comment_karma" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="wp-comment:approved" value="&lt;?php echo $comment-&gt;comment_approved; ?&gt;" description="wp-comment:comment_approved" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="wp-comment:set" value="&lt;?php  comments_template(); ?&gt;" description="set comment to loop post" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
 </templateSet>
